@@ -29,12 +29,31 @@ alias aseprite="/Users/alfie/codehub/aseprite/build/bin/aseprite"
 alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 alias home="vim /Users/alfie/codehub/obsidianvault/fifisv"
 
-# Too many plugins will kill us :)
-plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-)
+
 
 source $ZSH/oh-my-zsh.sh
 alias zshcode="code ~/.zshrc"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+# Too many plugins will kill us :)
+	plugins=(
+		git
+		zsh-syntax-highlighting
+		zsh-autosuggestions
+	)
+
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+
+	plugins=(
+		git
+		zsh-autosuggestions
+	)
+
+
+    if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+        source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    else
+        echo "zsh-syntax-highlighting not found, please install it."
+    fi
+fi
+
