@@ -793,14 +793,8 @@ require('lazy').setup {
     cmd = 'Copilot',
     build = ':Copilot auth',
     opts = {
-      suggestion = { enabled = true },
-      panel = { enabled = false },
-      filetypes = {
-        markdown = true,
-        help = true,
-        lua = true,
-        bash = true,
-      },
+      suggestion = { enabled = true, auto_trigger = true },
+      panel = { enabled = true, auto_refresh = true },
     },
   },
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the

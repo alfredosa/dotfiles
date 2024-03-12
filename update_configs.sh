@@ -30,3 +30,4 @@ echo "Updated tmux configuration"
 
 echo "Please remember to 'exec zsh' or start a new shell session to apply the updated configurations. Thanks and goodbye!"
 
+
