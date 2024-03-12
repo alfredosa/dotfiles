@@ -5,7 +5,9 @@ return {
     'jackMort/ChatGPT.nvim',
     event = 'VeryLazy',
     config = function()
-      require('chatgpt').setup()
+      require('chatgpt').setup {
+        api_key_cmd = 'op read op://personal/chatgpt-api-key/password --no-newline',
+      }
     end,
     dependencies = {
       'MunifTanjim/nui.nvim',
