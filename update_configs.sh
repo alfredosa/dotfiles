@@ -3,7 +3,6 @@
 # Update the .zshrc file with the correct paths
 rm -rf ~/.zshrc
 cp .zshrc ~/.zshrc
-source ~/.zshrc
 echo "Updated .zshrc file with the correct paths"
 
 # update neovim configuration
@@ -15,3 +14,7 @@ echo "Updated neovim configuration"
 rm -rf ~/.tmux.conf
 cp .tmux.conf ~/.tmux.conf
 echo "Updated tmux configuration"
+
+
+echo "trigger exec zsh to resource the zshrc file :), thanks and goodbye"
+
