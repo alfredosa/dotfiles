@@ -1,0 +1,62 @@
+{
+  "vim_mode": true,
+  "assistant": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
+  "autosave": "on_focus_change",
+  "theme": "Andromeda",
+  "buffer_font_size": 12,
+  "current_line_highlight": "gutter",
+  "ui_font_size": 16,
+  "buffer_font_family": "SFMono Nerd Font", // requires Awesome font
+  "formatter": "language_server",
+  "format_on_save": "on",
+  "preferred_line_length": 88,
+  "soft_wrap": "preferred_line_length",
+  "languages": {
+    "Go": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      },
+      "preferred_line_length": 100
+    },
+    "C": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "Python": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "JSON": {
+      "tab_size": 4
+    },
+    "Markdown": {
+      "preferred_line_length": 80
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      },
+      "preferred_line_length": 150
+    }
+  },
+  "ensure_final_newline_on_save": false,
+  "file_icons": true,
+  "close_position": "right",
+  "blinking": "off",
+  "scrollbar": {
+    "show": "never"
+  },
+  "inline_completions": {
+    "disabled_globs": [
+      ".env"
+    ]
+  },
+}
