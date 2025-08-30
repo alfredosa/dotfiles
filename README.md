@@ -1,5 +1,9 @@
 # My Dotfiles :)
 
+> [!WARNING]
+> This project is now officially migrated to https://git.alfie.news/dotfiles
+> I will likely delete this sometime.
+
 Hello, welcome to my kewl configs. I am trying to constantly add things into it, sicne I discovered that reinstalling my stuff over and over was relly painful.
 
 ## Hyprland with Arch Linux
